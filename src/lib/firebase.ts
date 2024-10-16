@@ -3,14 +3,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
-// Your Firebase configuration object
 const firebaseConfig = {
-  apiKey: "AIzaSyDFgFW_Lm7P0D1NiWrdk5fzYNgYJVyiC14",
-  authDomain: "photonicslabbookings.firebaseapp.com",
-  projectId: "photonicslabbookings",
-  storageBucket: "photonicslabbookings.appspot.com",
-  messagingSenderId: "987603461267",
-  appId: "1:987603461267:web:669909488966071f6b5966",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
