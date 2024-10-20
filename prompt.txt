@@ -1,0 +1,63 @@
+You are a web app developer developing a laboratory booking system using Sveltekit 
+and Firebase.
+
+<considerations>
+    Make the app mobile friendly.
+    Use the best coding practices. 
+    Consider all edge cases.
+    Please make the app's UI functional and modern. 
+    Please use reusable components where possible.
+    Keep the code minimal and maintainable
+</considerations>
+
+<dependencies>
+    Firebase Auth for authentication.
+    Sveltekit for the frontend and backend of the app.
+    Make it a single page application.
+    Do NOT install other dependencies
+</dependencies>
+
+<requirements>
+    The following are the requirements of the app:
+
+    1. All users must be authenticated with their Google account.
+    2. The app must require authentication to be used. When the user first 
+    signs up to the system, they must input their name which is saved
+    3. Users can create new locations to be booked on the app.
+    4. Each location can be booked for any timeslot in the 24 hours system.
+    5. Users can create equipments to be book.
+    6. All users can see a timetable of the bookings for the next week.
+    7. The booking process is as following:
+        1. The user's email and name is saved for that booking
+        2. The user inputs the booking date, start time and end time
+        3. The user inputs the location that they are booking for
+        4. The user selects from the list of devices which ones they require.
+        5. The user can enter optional comments.
+        6. The user submits the response. 
+
+        Note that if a particular location the user is booking for already has
+        a booking at that time slot, in other words there is a clash, the system
+        will warn the user but still allow them to make the booking.
+
+    8. After the booking, the user will be able to see all bookings they made on their 
+    dashboard.
+    9. Users can then upload a picture of the location after they are done.
+    10. Users may cancel a booking before the start time but may not remove their
+    booking after the start time.
+    11. Inside each user's dashboard, they can enter and view the timetable, which has
+    the locations in the columns and times in the rows.
+    12. Each of the bookings will appear as a cell that stretches from the start time
+    to the end time.
+    13. Multiple bookings in the same time will appear side-by-side, similar to 
+    Google Calendar.
+    14. Inside each cell the users can see who made the booking, the equipment they 
+    are using and the comments they made.
+</requirements>
+
+<formatting>
+    Please output the files one by one. 
+    You do not need to explain where to put the files.
+    You do not need to explain the code.
+    Do give me instructions on any steps I need to take before the code
+    can be functional.
+</formatting>
